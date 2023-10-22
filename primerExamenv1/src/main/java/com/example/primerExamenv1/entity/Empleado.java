@@ -20,14 +20,18 @@ public class Empleado {
     private String nombres;
     private String apellidos;
 
-    @OneToOne(mappedBy = "empleado")
-    private Usuario usuario;
-
-    @OneToOne(cascade = CascadeType.ALL)
+//    @OneToOne(mappedBy = "empleado")
+//    private Usuario usuario;
+//cascade = CascadeType.ALL
+    @OneToOne()
     @JoinColumn(name = "id_cuenta_bancaria")
     private CuentaBancaria cuentaBancaria;
-
-    @ManyToOne(cascade = CascadeType.PERSIST)
+//cascade = CascadeType.PERSIST
+    @ManyToOne()
     @JoinColumn(name = "id_contrato_laboral")
     private ContratoLaboral contratoLaboral;
+
+    public Empleado(Integer id) {
+        this.id = id;
+    }
 }

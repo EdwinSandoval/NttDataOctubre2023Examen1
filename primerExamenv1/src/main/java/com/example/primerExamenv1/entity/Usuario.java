@@ -23,8 +23,10 @@ public class Usuario {
 
     @ManyToMany(mappedBy = "usuarios")
     private List<Rol> rol;
-
-    @OneToOne(cascade = CascadeType.ALL)
+//cascade = CascadeType.ALL
+    @OneToOne()
     @JoinColumn(name = "id_empleado")
     private Empleado empleado;
+
+
 }

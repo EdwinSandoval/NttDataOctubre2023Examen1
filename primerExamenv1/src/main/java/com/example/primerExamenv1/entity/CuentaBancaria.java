@@ -24,6 +24,6 @@ public class CuentaBancaria {
     @JoinColumn(name = "idBanco")
     private Banco idBanco;
 
-    @OneToOne(mappedBy = "cuentaBancaria")
-    private Empleado empleado;
+//    @OneToOne(mappedBy = "cuentaBancaria")
+//    private Empleado empleado;
 }
