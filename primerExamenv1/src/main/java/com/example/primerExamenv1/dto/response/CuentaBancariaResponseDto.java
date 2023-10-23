@@ -11,5 +11,9 @@ import lombok.NoArgsConstructor;
 public class CuentaBancariaResponseDto {
     private Integer id;
     private String numeroCuenta;
-    private BancoResponseDto idBanco;
+    private Integer idBanco;
+
+    public CuentaBancariaResponseDto(Integer idBanco) {
+        this.idBanco = idBanco;
+    }
 }

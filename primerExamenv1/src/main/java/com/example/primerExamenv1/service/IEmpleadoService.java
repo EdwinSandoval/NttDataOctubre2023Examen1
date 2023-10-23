@@ -16,5 +16,5 @@ public interface IEmpleadoService {
 
     String eliminar(Integer id);
 
-//    EmpleadoResponseDto getUsuarioById (Integer id);
+    List<EmpleadoResponseDto> listEmpleadoNombre(String nombre);
 }

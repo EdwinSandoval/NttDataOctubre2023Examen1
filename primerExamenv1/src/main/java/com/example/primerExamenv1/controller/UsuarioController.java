@@ -25,6 +25,10 @@ public class UsuarioController {
     public ResponseEntity<List<UsuarioResponseDto>> listAll(){
         return  ResponseEntity.ok(iUsuarioService.listAll());
     }
+    @GetMapping("/listarActive")
+    public ResponseEntity<List<UsuarioResponseDto>> listarUsuarioActivo(@RequestParam(name = "active") Boolean active){
+        return  ResponseEntity.ok(iUsuarioService.listarUsuarioActivo(active));
+    }
     @GetMapping("/listar/{id}")
     public ResponseEntity<UsuarioResponseDto> buscarUsuario(@PathVariable(name = "id") Integer idUsuario){
         return new ResponseEntity<>(this.iUsuarioService.getUsuarioById(idUsuario), HttpStatus.OK);

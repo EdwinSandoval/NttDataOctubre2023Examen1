@@ -20,8 +20,7 @@ public class UsuarioServiceImpl implements IUsuarioService {
 
     @Autowired()
     private IUsuarioRepository iUsuarioRepository;
-//    @Autowired(required = false)
-//    private IUsuarioEntityMapper iUsuarioEntityMapper;
+
     @Override
     public List<UsuarioResponseDto> listAll() {
 
@@ -102,7 +101,20 @@ public class UsuarioServiceImpl implements IUsuarioService {
         return usuarioResponseDto;
     }
 
+    @Override
+    public List<UsuarioResponseDto> listarUsuarioActivo(Boolean active) {
+        return this.iUsuarioRepository.listUsuarioActive(active).stream()
+                .map(p -> {
+                    UsuarioResponseDto usuarioResponseDto = new UsuarioResponseDto();
+                    usuarioResponseDto.setId(p.getId());
+                    usuarioResponseDto.setUsername(p.getUsername());
+                    usuarioResponseDto.setPassword(p.getPassword());
+                    usuarioResponseDto.setActive(p.getActive());
+                    usuarioResponseDto.setIdEmpleado(p.getEmpleado().getId());
 
+                    return usuarioResponseDto;
+                }).collect(Collectors.toList());
+    }
 
 
 }

@@ -13,5 +13,7 @@ import java.util.List;
 public class BancoResponseDto {
     private Integer id;
     private String nombre;
-    private List<CuentaBancariaResponseDto> cuenta;
+//    private List<CuentaBancariaResponseDto> cuenta;
+
+
 }

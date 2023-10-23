@@ -16,5 +16,5 @@ public interface ICuentaBancariaService {
 
     String eliminar(Integer id);
 
-//    CuentaBancariaResponseDto getUsuarioById (Integer id);
+    CuentaBancariaResponseDto buscarPorNumeroCuenta (String nroCuenta);
 }

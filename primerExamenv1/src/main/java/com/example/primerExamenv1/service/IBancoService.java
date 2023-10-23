@@ -4,6 +4,7 @@ package com.example.primerExamenv1.service;
 
 import com.example.primerExamenv1.dto.request.BancoRequestDto;
 import com.example.primerExamenv1.dto.response.BancoResponseDto;
+import com.example.primerExamenv1.dto.response.EmpleadoResponseDto;
 
 import java.util.List;
 
@@ -15,4 +16,5 @@ public interface IBancoService {
     BancoResponseDto update(BancoRequestDto request,Integer id);
 
     String eliminar(Integer id);
+    List<BancoResponseDto> listBancoNombre(String nombre);
 }

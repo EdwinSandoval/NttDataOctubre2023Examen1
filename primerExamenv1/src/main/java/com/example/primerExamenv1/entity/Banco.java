@@ -21,4 +21,6 @@ public class Banco {
 
     @OneToMany(mappedBy = "idBanco")
     private List<CuentaBancaria> cuenta;
+
+
 }
