@@ -6,7 +6,6 @@ import com.example.primerExamenv1.dto.response.EmpleadoResponseDto;
 import com.example.primerExamenv1.dto.response.UsuarioResponseDto;
 import com.example.primerExamenv1.entity.Empleado;
 import com.example.primerExamenv1.entity.Usuario;
-//import com.example.primerExamenv1.mapper.IUsuarioEntityMapper;
 import com.example.primerExamenv1.repository.IUsuarioRepository;
 import com.example.primerExamenv1.service.IUsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
