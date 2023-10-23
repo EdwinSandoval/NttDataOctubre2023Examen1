@@ -14,10 +14,10 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ContratoLaboral {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+public class ContratoLaboral  extends Base{
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Integer id;
     @Column(name = "sueldo_base")
     private Double sueldoBase;
     @Column(name = "tipo_contrato")

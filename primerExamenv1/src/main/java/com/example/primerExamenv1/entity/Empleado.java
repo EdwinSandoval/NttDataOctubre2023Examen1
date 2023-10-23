@@ -12,10 +12,10 @@ import javax.persistence.*;
 @Setter // genera todos los setters
 @AllArgsConstructor
 @NoArgsConstructor
-public class Empleado {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+public class Empleado  extends Base{
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Integer id;
 
     private String nombres;
     private String apellidos;
@@ -31,7 +31,7 @@ public class Empleado {
     @JoinColumn(name = "id_contrato_laboral")
     private ContratoLaboral contratoLaboral;
 
-    public Empleado(Integer id) {
-        this.id = id;
-    }
+//    public Empleado(Integer id) {
+//        this. = id;
+//    }
 }
