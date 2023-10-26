@@ -19,6 +19,7 @@ public class Empleado {
 
     private String nombres;
     private String apellidos;
+    private Long empresaId;
 
 //    @OneToOne(mappedBy = "empleado")
 //    private Usuario usuario;

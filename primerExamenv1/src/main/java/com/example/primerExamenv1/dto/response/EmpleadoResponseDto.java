@@ -13,9 +13,10 @@ import javax.persistence.OneToOne;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EmpleadoResponseDto {
-    private Integer id;
+//    private Integer id;
     private String nombres;
     private String apellidos;
     private Integer idCuentaBancaria;
     private Integer idContratoLaboral;
+    private Long empresaId;
 }

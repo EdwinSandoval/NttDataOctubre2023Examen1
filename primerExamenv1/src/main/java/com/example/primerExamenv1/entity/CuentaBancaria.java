@@ -24,6 +24,10 @@ public class CuentaBancaria {
     @JoinColumn(name = "idBanco")
     private Banco idBanco;
 
-//    @OneToOne(mappedBy = "cuentaBancaria")
+    public CuentaBancaria(Integer id) {
+        this.id = id;
+    }
+
+    //    @OneToOne(mappedBy = "cuentaBancaria")
 //    private Empleado empleado;
 }

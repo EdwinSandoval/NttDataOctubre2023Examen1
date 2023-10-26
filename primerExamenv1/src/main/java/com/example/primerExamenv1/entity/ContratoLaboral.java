@@ -26,4 +26,7 @@ public class ContratoLaboral {
     @OneToMany(mappedBy = "contratoLaboral")
     private List<Empleado> empleados;
 
+    public ContratoLaboral(Integer id) {
+        this.id = id;
+    }
 }
