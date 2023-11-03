@@ -27,7 +27,8 @@ public class EmpresaServiceImpl implements IEmpresaService {
   @Override
   public EmpresaDto buscar(Long id) {
     Optional<Empresa> empresaFound = empresaRepository.findById(id);
-    return empresaFound.map(Utils::toEmpresaDto).orElse(new EmpresaDto("No se encontro registro con este ID"));
+    return empresaFound.map(Utils::toEmpresaDto).orElse(
+            new EmpresaDto("No se encontro registro con este ID"));
   }
 
   @Override

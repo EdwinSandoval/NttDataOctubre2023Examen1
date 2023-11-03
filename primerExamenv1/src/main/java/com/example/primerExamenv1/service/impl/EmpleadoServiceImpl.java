@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 @Service
 @RequiredArgsConstructor
 public class EmpleadoServiceImpl implements IEmpleadoService {
+
     private final IEmpresaFeing iEmpresaFeing;
 
     @Autowired()

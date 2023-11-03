@@ -19,4 +19,10 @@ public class EmpleadoResponseDto {
     private Integer idCuentaBancaria;
     private Integer idContratoLaboral;
     private Long empresaId;
+
+    private String mensaje;
+
+    public EmpleadoResponseDto(String mensaje) {
+        this.mensaje = mensaje;
+    }
 }
